@@ -1,13 +1,13 @@
 package com.example.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Data
 public class MaisonEdition {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
